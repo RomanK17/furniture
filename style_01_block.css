@@ -1,0 +1,56 @@
+.body {
+  background: #f3f2f2;
+}
+
+.gallery {
+  height: 994px;
+}
+
+.gallery__header {
+  height: 149px;
+  margin-bottom: 41px;
+  text-align: center;
+
+  font-family: "Roboto Mono", monospace;
+  font-size: 128px;
+  line-height: 149px;
+  color: #000000;
+}
+
+.gallery__imagesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.gallery__description {
+  font-family: "Roboto Mono", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 42px;
+  color: #000000;
+
+  text-align: center;
+}
+
+.image_exp {
+  width: 336px;
+  height: 336px;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.showImg {
+  max-width: 80%;
+  height: 80%;
+}
