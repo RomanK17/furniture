@@ -1,3 +1,5 @@
+import { Cloudinary } from "@cloudinary/url-gen";
+
 const addSwitchingImages = () => {
     const imagesContainer = document.querySelector('.gallery__imagesContainer');
     const modalBigImg = document.createElement('div');
@@ -20,6 +22,13 @@ const addSwitchingImages = () => {
         const pathBigImg = allBigImgs[counter].getAttribute('href');
         bigImg.setAttribute('src', pathBigImg);
     }
+    //enable cloudinary
+    const cld = new Cloudinary({
+        cloud: {
+            cloudName: 'dwoclhnph'
+        }
+    });
+    const myImage = cld.image('docs/models-12');
 
     const showModalBigImg = () => {
         modalBigImg.style.display = 'flex';
@@ -36,7 +45,7 @@ const addSwitchingImages = () => {
         const target = event.target;
 
         if (target.closest('.image_exp')) {
-            const pathBigImg = target.parentNode.getAttribute('href');
+            const pathBigImg = myImage.toURL();
             bigImg.setAttribute('src', pathBigImg);
             showModalBigImg();
         }
