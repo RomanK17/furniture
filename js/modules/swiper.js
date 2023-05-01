@@ -25,7 +25,8 @@ const swiper = new Swiper('.swiper', {
     },
 
     autoplay: {
-        delay: 2000
+        delay: 2000,
+        disableOnInteraction: true
     },
 
     effect: 'coverflow',
@@ -48,6 +49,10 @@ const swiper = new Swiper('.swiper', {
             slidesPerView: 4,
         }
     },
+});
+
+swiper.on('click', function () {
+    swiper.autoplay.pause();
 });
 
 export default swiper;

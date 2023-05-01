@@ -28,6 +28,10 @@
   text-align: center;
 }
 
+.swiper-pagination {
+  bottom: 0px !important;
+  /* top: 0px !important; */
+}
 .image_exp {
   width: 336px;
   height: 336px;
