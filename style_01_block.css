@@ -29,9 +29,9 @@
 }
 
 .swiper-pagination {
-  bottom: 0px !important;
-  /* top: 0px !important; */
+  bottom: auto !important;
 }
+
 .gallery__swiper-image {
   width: 336px;
   height: 336px;
