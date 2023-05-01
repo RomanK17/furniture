@@ -46,7 +46,7 @@ const addSwitchingImages = () => {
         event.preventDefault();
         const target = event.target;
 
-        if (target.classList.contains('image_exp')) {
+        if (target.classList.contains('gallery__swiper-image')) {
             const pathBigImg = target.getAttribute('src');
             bigImg.setAttribute('src', pathBigImg);
             showModalBigImg();
