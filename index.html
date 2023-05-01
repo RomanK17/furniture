@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style_01_block.css" />
+  <link rel="stylesheet" href="/style_01_block.css" />
   <title>Мак Мебель</title>
 </head>
 
@@ -23,28 +23,37 @@
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur, eligendi?
     </div>
 
-    <div class="gallery__imagesContainer">
-      <div class="gallery__imagesContainer-image"><a class='bigImg'
+
+<div class="swiper">
+    <div class="gallery__imagesContainer swiper-wrapper">
+      <div class="gallery__imagesContainer-image swiper-slide"><a class='bigImg'
           href="/assets/images/tabcontainer_examples/exp1.jpeg" title="кликните, чтобы увеличить"><img class="image_exp"
             src="/assets/images/tabcontainer_examples/exp1.jpeg" alt=""></a>
       </div>
-      <div class="gallery__imagesContainer-image"><a class='bigImg'
+      <div class="gallery__imagesContainer-image swiper-slide"><a class='bigImg'
           href="/assets/images/tabcontainer_examples/exp2.jpeg" title="кликните, чтобы увеличить"><img class="image_exp"
             src="/assets/images/tabcontainer_examples/exp2.jpeg" alt=""></a></div>
-      <div class="gallery__imagesContainer-image"><a class='bigImg'
+      <div class="gallery__imagesContainer-image swiper-slide"><a class='bigImg'
           href="/assets/images/tabcontainer_examples/exp3.jpeg" title="кликните, чтобы увеличить"><img class="image_exp"
             src="/assets/images/tabcontainer_examples/exp3.jpeg" alt=""></a></div>
-      <div class="gallery__imagesContainer-image"><a class='bigImg'
+      <div class="gallery__imagesContainer-image swiper-slide"><a class='bigImg'
           href="/assets/images/tabcontainer_examples/exp4.jpeg" title="кликните, чтобы увеличить"><img class="image_exp"
             src="/assets/images/tabcontainer_examples/exp4.jpeg" alt=""></a></div>
-
-
-
     </div>
 
+      <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
   </section>
 
-  <script type="module" src="/main.js"></script>
+  <script type="module" src="/js/main.js"></script>
 </body>
 
 </html>

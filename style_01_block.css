@@ -17,12 +17,6 @@
   color: #000000;
 }
 
-.gallery__imagesContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-}
-
 .gallery__description {
   font-family: "Roboto Mono", monospace;
   font-style: normal;
@@ -34,9 +28,14 @@
   text-align: center;
 }
 
+.gallery__imagesContainer-image {
+  text-align: center;
+}
+
 .image_exp {
   width: 336px;
   height: 336px;
+  max-width: 100%;
 }
 
 .popup {
