@@ -1,8 +1,8 @@
 const addSwitchingImages = () => {
-    const imagesContainer = document.querySelector('.gallery__imagesContainer');
+    const imagesContainer = document.querySelector('.gallery__сontainer');
     const modalBigImg = document.createElement('div');
     const bigImg = document.createElement('img');
-    const allImages = document.querySelectorAll('.image_exp');
+    const allImages = document.querySelectorAll('.gallery__swiper-image');
     const pagination = document.body.querySelector('.swiper-pagination');
 
     //create modal
