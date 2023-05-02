@@ -3,13 +3,13 @@
 }
 
 .gallery {
-  height: 994px;
+  max-height: 994px;
 }
 
 .gallery__header {
-  height: 149px;
   margin-bottom: 41px;
   text-align: center;
+  margin-top: 0px;
 
   font-family: "Roboto Mono", monospace;
   font-size: 128px;

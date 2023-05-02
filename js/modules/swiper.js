@@ -2,11 +2,9 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 const swiper = new Swiper('.swiper', {
-    slidesPerView: 3,
     centeredSlides: true,
     loop: true,//должно быть минимум 6 слайдов для корректной работы
     spaceBetween: 10,
-
 
     pagination: {
         el: '.swiper-pagination',
@@ -35,20 +33,24 @@ const swiper = new Swiper('.swiper', {
         300: {
             slidesPerView: 1,
         },
-        600: {
+        450: {
             slidesPerView: 2,
         },
         800: {
             slidesPerView: 3,
         },
-        1300: {
+        1200: {
             slidesPerView: 4,
+        },
+        1700: {
+            slidesPerView: 5,
         }
     },
-});
-
-swiper.on('click', function () {
-    swiper.autoplay.pause();
+    on: {
+        click: function () {
+            swiper.autoplay.stop()
+        },
+    },
 });
 
 export default swiper;
