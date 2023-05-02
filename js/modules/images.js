@@ -1,3 +1,5 @@
+import swiper from "./swiper";
+
 const addSwitchingImages = () => {
     const imagesContainer = document.querySelector('.gallery__сontainer');
     const modalBigImg = document.createElement('div');
@@ -40,6 +42,8 @@ const addSwitchingImages = () => {
         modalBigImg.style.display = 'none';
         document.body.style.overflow = '';
         pagination.style.display = '';
+        swiper.enable();
+        swiper.autoplay.start();
     }
 
     imagesContainer.addEventListener('click', (event) => {

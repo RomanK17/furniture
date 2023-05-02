@@ -48,7 +48,8 @@ const swiper = new Swiper('.swiper', {
     },
     on: {
         click: function () {
-            swiper.autoplay.stop()
+            swiper.autoplay.stop();
+            swiper.disable();
         },
     },
 });
