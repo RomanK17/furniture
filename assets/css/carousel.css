@@ -1,9 +1,9 @@
-.body {
+body {
   background: #f3f2f2;
+  min-height: 100vh;
 }
 
 .gallery {
-  max-height: 994px;
 }
 
 .gallery__header {
