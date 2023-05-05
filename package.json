@@ -10,5 +10,9 @@
   },
   "devDependencies": {
     "vite": "^4.3.2"
+  },
+  "dependencies": {
+    "@cloudinary/url-gen": "^1.10.0",
+    "swiper": "^9.2.4"
   }
 }
