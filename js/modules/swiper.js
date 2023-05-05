@@ -4,7 +4,7 @@ import 'swiper/css/bundle';
 const swiper = new Swiper('.swiper', {
     centeredSlides: true,
     loop: true,//должно быть минимум 6 слайдов для корректной работы
-    spaceBetween: 10,
+    spaceBetween: 50,
 
     pagination: {
         el: '.swiper-pagination',
@@ -33,7 +33,7 @@ const swiper = new Swiper('.swiper', {
         300: {
             slidesPerView: 1,
         },
-        450: {
+        500: {
             slidesPerView: 2,
         },
         800: {

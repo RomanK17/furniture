@@ -3,39 +3,52 @@ body {
   min-height: 100vh;
 }
 
+body,
+button,
+a {
+  font-family: "Roboto Mono", monospace;
+  color: #140202;
+  font-size: 20px;
+  line-height: 42px;
+}
+
 .gallery {
+  position: relative;
 }
 
 .gallery__header {
-  margin-bottom: 41px;
+  margin-bottom: 40px;
   text-align: center;
   margin-top: 0px;
-
-  font-family: "Roboto Mono", monospace;
-  font-size: 128px;
-  line-height: 149px;
-  color: #000000;
+  font-size: 6em;
+  line-height: 1;
 }
 
 .gallery__description {
-  font-family: "Roboto Mono", monospace;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 42px;
-  color: #000000;
-
   text-align: center;
 }
 
-.swiper-pagination {
-  bottom: auto !important;
+.gallery__swiper-container {
+  width: 100%;
+  height: 336px;
+  opacity: 0.4;
+  transition: 0.3s ease-out;
+}
+
+.swiper-slide-active .gallery__swiper-container {
+  transform: scale(1.2);
+  opacity: 1;
 }
 
 .gallery__swiper-image {
-  width: 336px;
-  height: 336px;
-  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.swiper-pagination {
+  bottom: -40px !important;
 }
 
 .popup {
@@ -45,8 +58,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 9;
+  z-index: 2;
   background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
 }
 
 .showImg {

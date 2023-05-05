@@ -5,16 +5,13 @@ const addSwitchingImages = () => {
     const modalBigImg = document.createElement('div');
     const bigImg = document.createElement('img');
     const allImages = document.querySelectorAll('.gallery__swiper-image');
-    const pagination = document.body.querySelector('.swiper-pagination');
 
     //create modal
     modalBigImg.classList.add('popup');
-    document.querySelector('.gallery__description').appendChild(modalBigImg);
-    modalBigImg.style.justifyContent = 'center';
-    modalBigImg.style.alignItems = 'center';
+    document.querySelector('.gallery__description').append(modalBigImg);
 
     // create image
-    modalBigImg.appendChild(bigImg);
+    modalBigImg.append(bigImg);
     bigImg.classList.add('showImg');
 
     //for arrow
@@ -35,13 +32,11 @@ const addSwitchingImages = () => {
     const showModalBigImg = () => {
         modalBigImg.style.display = 'flex';
         document.body.style.overflow = 'hidden';
-        pagination.style.display = 'none';
     }
 
     const hideModalBigImg = () => {
         modalBigImg.style.display = 'none';
         document.body.style.overflow = '';
-        pagination.style.display = '';
         swiper.enable();
         swiper.autoplay.start();
     }
