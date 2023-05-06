@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" /> 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap" rel="stylesheet">
@@ -86,7 +87,15 @@
 
   </section>
 
+  <section class="map">
+    <div class="map__container" id="yamap">
+
+    </div>
+  </section>
+
   <script type="module" src="/js/main.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"
+  type="text/javascript"></script>
 </body>
 
 </html>
