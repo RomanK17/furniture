@@ -14,8 +14,6 @@ dist-ssr
 dist/
 yarn.lock
 jsconfig.json
-public/
-javascript.svg
 
 # Editor directories and files
 .vscode/*
