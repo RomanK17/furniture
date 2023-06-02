@@ -5,7 +5,8 @@ const createMap = () => {
     ymaps.ready(function() {
         const myMap = new ymaps.Map(map, {
             center: center,
-            zoom:16
+            zoom:16,
+            controls: ['routePanelControl']
         });
 
         const placemark = new ymaps.Placemark(center,{
@@ -22,11 +23,18 @@ const createMap = () => {
         myMap.geoObjects.add(placemark);
 
         const location = ymaps.geolocation.get();//promise
-
         location.then(function(result) {
 const locationText = result.geoObjects.get(0).properties.get('text');
-console.log(locationText);
+
+            const control = myMap.controls.get('routePanelControl');
+
+            control.routePanel.state.set({
+                type: 'masstransit',
+                from: locationText,
+                toEnabled: false,//нельзя заполнять поле куда
+                to: center
         });
+        })
     });
 }
 
