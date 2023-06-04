@@ -87,6 +87,17 @@ h2 {
 /*one solution*/
 .solution__img {
   max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.solution__header {
+  font-size: 4em;
+}
+
+.solution__text{
+  text-align: center;
 }
 
 @media screen and (max-width: 700px) {
