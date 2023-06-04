@@ -20,7 +20,7 @@ section {
   position: relative;
 }
 
-.gallery__header {
+h2 {
   margin-bottom: 40px;
   text-align: center;
   margin-top: 0;
@@ -72,7 +72,7 @@ section {
   max-width: 80%;
   max-height: 80%;
 }
-
+/* map*/
 .map-contacts {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -82,6 +82,22 @@ section {
 #yamap {
   min-height: 500px;
   min-width: 300px;
+}
+
+/*one solution*/
+.solution__img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.solution__header {
+  font-size: 4em;
+}
+
+.solution__text{
+  text-align: center;
 }
 
 @media screen and (max-width: 700px) {
